@@ -1,0 +1,442 @@
+.header{
+	display: flex;
+	font-family: Dancing Script;
+	color: rgb(0,0,0);
+	font-size: 45px;
+	padding: 40px;
+}
+
+@media (max-width: 600px)
+{
+	.header{
+		padding: 35px;
+		font-size: 35px;
+	}
+}
+
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#close{
+  text-align: right;
+  color: white;
+  font-size: 100px;
+  padding-right: 50px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  
+}
+
+#overlay-center{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  overflow: hidden;
+	border-radius: 10px;
+  padding-top: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#link-box{
+  display: flex;
+  flex-direction: column;
+  //justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 800px;
+  background-color: white;
+	overflow: hidden;
+	border-radius: 10px;
+  text-align: center;
+}
+
+#share-text{
+  display: flex;
+  //justify-content: center;
+  //align-items: center;
+  font-family: Arial;
+  font-size: 35px;
+  font-weight: bold;
+  padding-top: 75px;
+  padding-bottom: 30px;
+  
+}
+
+#link-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial;
+  font-size: 20px;
+  align-text:center;
+  padding-left: 50px;
+  padding-right: 50px;
+  
+}
+
+
+.center{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.card{
+	background-color: #e6e2cf;
+	display: flex;
+	flex-direction: row;
+	margin-top: 30px;
+	margin-bottom: 10px;
+	overflow: hidden;
+	border-radius: 10px;
+	max-width: 600px;
+}
+
+@media (max-width: 600px){
+	.card{
+		flex-direction: column;
+		padding: 20px;
+	}
+}
+
+.image{
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	padding-right: 20px;
+	width: 250px;
+	align-items: center;
+	justify-content: center;
+}
+
+@media (max-width: 600px){
+	.image{
+		padding-right: 20px;
+		padding-bottom: 0px;
+	}
+}
+
+#upload-image{
+	display: flex;
+	border: dashed;
+	height: 225px;
+	width: 175px;
+	border-width: thin;
+	justify-content: center;
+	align-items: center;
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+@media (max-width: 600px){
+	#upload-image{
+		height: 175px;
+		width: 225px;
+	}
+}
+
+input#fileChooser{
+	display: none;
+}
+
+input#fileChooser2{
+	display: none;
+}
+
+
+
+img{
+  width: 100%;
+}
+
+div.imageWrapper {
+  width: 100%;
+  max-width: 500px;
+}
+
+img#serverImage {
+  width: 100%;
+}
+
+#replace{
+	padding-top: 5px;
+	display: flex;
+	justify-content: center;
+	display: none;
+}
+
+#replace-text{
+	padding: 10px;
+	font-family: Arial;
+	//max-width: 50%;
+	border: solid;
+	border-width: thin;
+	font-size: 15px;
+}
+
+.line-center{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#line{
+	width: 2px;
+ 	margin-top: 20px;
+ 	margin-bottom: 20px;
+ 	background: black;
+ 	height: 100%;
+}
+
+@media (max-width: 600px){
+	#line{
+		width: 100%;
+		height: 2px;
+		margin-left: 20px;
+		margin-right: 20px;
+		margin-top: 5px;
+		margin-bottom: 0px;
+		display: none;
+	}
+	.line-center{
+		flex-direction: row;
+	}
+}
+
+.text{
+	display: flex;
+	padding: 20px;
+	min-height: 150px;
+	width: 250px;
+	font-family: Indie Flower;
+	font-size: 15px;
+}
+
+.center-footer
+{
+	display: flex;
+	width: 100%;
+	//background-color: lightblue;
+	justify-content: center;
+
+	
+}
+
+.footer{
+	display: flex;
+	flex-direction: row;
+	//background-color: #c9cbb3;
+	margin-top: 30px;
+	padding-bottom: 20px;
+	justify-content: space-around;
+	width: 100%;
+	max-width: 600px;
+	padding: 20px;
+	padding-top: 0px;
+	font-family: Arial;
+	font-size: 15px;
+	//background-color: lightblue;
+}
+
+@media (max-width: 600px){
+	.footer{
+		flex-direction: column;
+	}
+
+}
+
+
+.choose-font{
+	display: flex;
+
+	text-align: left;
+	padding-bottom: 10px;
+}
+
+.font-list{
+	display: flex;
+
+}
+
+ul {
+  font-size: 15px;
+  padding-top: 5px;
+
+}
+
+#indie-font{
+	font-family: Indie Flower;
+	cursor: pointer;
+	display: none;
+}
+#dancing-font{
+	padding-top: 5px;
+	font-family: Dancing Script;
+	cursor: pointer;
+}
+#cang-font{
+	padding-top: 5px;
+	font-family: Long Cang;
+	cursor: pointer;
+}
+#apple-font{
+	padding-top: 5px;
+	font-family: Homemade Apple;
+	cursor: pointer;
+}
+#indie-font2{
+	font-family: Indie Flower;
+	cursor: pointer;
+}
+#dancing-font2{
+	padding-top: 5px;
+	font-family: Dancing Script;
+	cursor: pointer;
+	display: none;
+}
+#cang-font2{
+	padding-top: 5px;
+	font-family: Long Cang;
+	cursor: pointer;
+	display: none;
+}
+#apple-font2{
+	padding-top: 5px;
+	font-family: Homemade Apple;
+	cursor: pointer;
+	display: none;
+}
+
+.choose-color{
+	display: flex;
+
+	text-align: left;
+	padding-bottom: 10px;
+
+}
+
+#grid{
+	display: grid;
+	grid-template-columns: auto auto auto auto auto;
+	grid-gap: 0px;
+	padding: 10px;
+	padding-left: 0px;
+}
+
+#grid > div{
+	//border: 1px solid black;
+	text-align: center;
+	width: 30px;
+	height: 30px;
+}
+
+@media (max-width: 600px){
+	#grid{
+		grid-template-columns: auto auto auto auto auto auto auto auto;
+	}
+
+}
+
+#e6e2cf
+{
+	background-color: #e6e2cf;
+	border: solid;
+	border-width: thin;
+	margin: 5px;
+}
+
+#dbcaac{
+	background-color: #dbcaac;
+	margin: 5px;
+}
+
+#c9cbb3{
+	background-color: #c9cbb3;
+	margin: 5px;
+}
+
+#bbc9ca{
+	background-color: #bbc9ca;
+	margin: 5px;
+}
+
+#a6a5b5
+{
+	background-color: #a6a5b5;
+	margin: 5px;
+}
+
+#b5a6ab
+{
+	background-color: #b5a6ab;
+	margin: 5px;
+}
+
+#eccfcf{
+	background-color: #eccfcf;
+	margin: 5px;
+}
+
+#eceeeb
+{
+	background-color: #eceeeb;
+	margin: 5px;
+}
+
+#bab9b5
+{
+	background-color: #bab9b5;
+	margin: 5px;
+}
+
+.share{
+	display: flex;
+	text-align: left;
+	padding-top:25px;
+}
+
+#sharecard{
+	border: solid;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-family: Arial;
+	font-weight: normal;
+	padding-top: 7.5px;
+	padding-bottom: 7.5px;
+	height: 15px;
+	border-width: thin;
+  cursor: pointer;
+}
+
+@media (max-width: 600px){
+	.share{
+		padding-top: 10px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+

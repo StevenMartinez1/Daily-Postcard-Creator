@@ -1,0 +1,139 @@
+<!-- This is the awful HTML comment syntax -->
+<!DOCTYPE html> <!-- Message to browser...I think I am HTML -->
+<html lang="en">
+<!-- My text is in English -->
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="reset.css">
+	<link href="style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script|Homemade+Apple|Indie+Flower|Long+Cang&display=swap">
+
+</head>
+
+<header class="header">
+	Daily Postcard Creator 
+</header>
+
+<body>
+  <div id="overlay">
+    
+    <div id="close" onclick="off()">
+     &#10799;
+    </div>
+  
+    <div id="overlay-center">
+      
+      <div id ="link-box">
+        <div id="share-text">
+          Share your postcard:
+        </div>
+        
+        <a id="link-text" href="https://glacier-snapdragon-pancreas.glitch.me/display.html?id=jegq86xlk8ebeu44cmkmb"> 
+          
+        </a>
+      
+    </div>
+    
+  </div>
+  </div>
+
+	<div class="center">
+
+			<div class="card">
+
+				<div class="image">
+					<div class="imageWrapper">
+						<img id="serverImage"/>
+    				</div>
+					<label for="fileChooser"> 
+					<div id="upload-image">
+						Choose Image
+						<!--<img src="img.jpg"> -->
+			
+					</div>
+					</label>
+					<input type="file" id="fileChooser" accept="image/png, .jpeg, .jpg, image/gif">
+
+					<label for="fileChooser"> 
+					<div id="replace">
+						<div id="replace-text">Replace Image</div>
+					</div> 
+					</label>
+					<input type="file" id="fileChooser2" accept="image/png, .jpeg, .jpg, image/gif">
+				</div>
+
+
+
+				<div class="line-center">
+					<div id="line"></div>
+				</div>
+				<div class="text" contenteditable="true">
+					Write your message here!
+				</div>
+
+			</div>
+
+
+	</div>
+
+<div class="center-footer">
+	<div class="footer">
+			
+			<div class="choose-font">
+				<div class="font-center">
+					<h1>Choose your font</h1>
+					<div class="font-list">
+					<ul>
+					<li id="indie-font"> &#9671; Indie Flower</li>
+					<li id="indie-font2"> &#x2756; Indie Flower</li>
+
+					<li id="dancing-font"> &#9671; Dancing Script</li>
+					<li id="dancing-font2"> &#x2756; Dancing Script</li>
+
+					<li id="cang-font"> &#9671; Long Cang</li>
+					<li id="cang-font2"> &#x2756; Long Cang</li>
+
+					<li id="apple-font">  &#9671; Homemade Apple</li>
+					<li id="apple-font2">  &#x2756; Homemade Apple</li>
+					</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="choose-color">
+				<div class="color-center">
+					Choose your color
+					<div id="grid">
+						<div id="e6e2cf"></div>
+						<div id="dbcaac"></div>
+						<div id="c9cbb3"></div>
+						<div id="bbc9ca"></div>
+						<div id="a6a5b5"></div>
+						<div id="b5a6ab"></div>
+						<div id="eccfcf"></div>
+						<div id="eceeeb"></div>
+						<div id="bab9b5"></div>
+					</div>
+				</div>
+			</div>
+
+			<div onclick="on()" class="share">
+				<div id="sharecard">
+				Share postcard
+				</div>
+			</div>
+		</div>
+		</div>
+
+
+<footer>
+	<script src="./script.js"></script>
+</footer>
+
+</body>
+
+
+</html>
